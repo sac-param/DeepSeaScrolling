@@ -1,45 +1,73 @@
 import { OceanZone, SeaCreature } from './types';
 
-export const MAX_DEPTH = 11000; // Mariana Trench depth approx
-export const PIXELS_PER_METER = 10; // 10 pixels per meter
+export const MAX_DEPTH = 11000;
+
+// default scale for most of the ocean
+export const PIXELS_PER_METER = 10;
+
+// extra stretch only for the first zone
+export const FIRST_ZONE_END_DEPTH = 200;
+export const FIRST_ZONE_PIXELS_PER_METER = 18; // change to 20 if you want even more space
 
 export const OCEAN_ZONES: OceanZone[] = [
   {
     name: "Epipelagic Zone (Sunlight Zone)",
     startDepth: 0,
     endDepth: 200,
-    color: "#4facfe", // Light blue
+    color: "#4facfe",
     description: "The Sunlight Zone. Where most visible light exists."
   },
   {
     name: "Mesopelagic Zone (Twilight Zone)",
     startDepth: 200,
     endDepth: 1000,
-    color: "#005bea", // Medium blue
+    color: "#005bea",
     description: "The Twilight Zone. Light is very faint here."
   },
   {
     name: "Bathypelagic Zone",
     startDepth: 1000,
     endDepth: 4000,
-    color: "#00234a", // Dark blue
+    color: "#00234a",
     description: "The Midnight Zone. The only light comes from bioluminescence."
   },
   {
     name: "Abyssopelagic Zone",
     startDepth: 4000,
     endDepth: 6000,
-    color: "#000814", // Very dark
+    color: "#000814",
     description: "The Abyss. Water temperature is near freezing."
   },
   {
     name: "Hadalpelagic Zone",
     startDepth: 6000,
     endDepth: 11000,
-    color: "#000000", // Pitch black
+    color: "#000000",
     description: "The Trenches. The deepest parts of the ocean."
   }
 ];
+
+// piecewise conversion: depth -> pixels
+export const getDepthOffsetPx = (depth: number) => {
+  if (depth <= FIRST_ZONE_END_DEPTH) {
+    return depth * FIRST_ZONE_PIXELS_PER_METER;
+  }
+
+  const firstZoneHeight = FIRST_ZONE_END_DEPTH * FIRST_ZONE_PIXELS_PER_METER;
+  return firstZoneHeight + (depth - FIRST_ZONE_END_DEPTH) * PIXELS_PER_METER;
+};
+
+// inverse conversion: pixels -> depth
+export const getDepthFromOffsetPx = (offsetPx: number) => {
+  const firstZoneHeight = FIRST_ZONE_END_DEPTH * FIRST_ZONE_PIXELS_PER_METER;
+
+  if (offsetPx <= firstZoneHeight) {
+    return offsetPx / FIRST_ZONE_PIXELS_PER_METER;
+  }
+
+  return FIRST_ZONE_END_DEPTH + (offsetPx - firstZoneHeight) / PIXELS_PER_METER;
+};
+
 
 export const SEA_CREATURES: SeaCreature[] = [
   {
