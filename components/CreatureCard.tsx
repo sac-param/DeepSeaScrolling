@@ -20,18 +20,19 @@ const CreatureCard: React.FC<CreatureCardProps> = ({ creature, index }) => {
   const column = index % 3;
   const row = Math.floor(index / 3);
 
-  // Wider stagger so names/images do not collide
+  // 8 columns, unevenly spaced to feel more natural/organic
   const columnOffsets = [
-    [10, 18, 26, 14], // left area
-    [42, 50, 58, 46], // center area
-    [74, 82, 90, 78], // right area
+    [7, 16, 28],   // left group   — tight near left edge
+    [38, 50],      // center-left
+    [60, 72],      // center-right
+    [82, 93],      // right group  — tight near right edge
   ];
 
   const horizontalOffset = columnOffsets[column][row % 4];
 
   const imageSizeClass =
     sizeClassMap[
-      (creature.sizeCategory as keyof typeof sizeClassMap) || 'Small'
+    (creature.sizeCategory as keyof typeof sizeClassMap) || 'Small'
     ] || sizeClassMap.Small;
 
   return (

@@ -17,6 +17,30 @@
       -ms-overflow-style: none;
     }
 
+    * {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    /* Disable image dragging */
+    img {
+      -webkit-user-drag: none;
+      user-drag: none;
+      pointer-events: none;
+    }
+
+    /* Disable cursor changes (looks more like an app) */
+    * {
+      cursor: default !important;
+    }
+
+    /* Disable tap highlight on mobile/touch */
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+
     body::-webkit-scrollbar {
       display: none;
     }
@@ -32,6 +56,13 @@
       /* IE and Edge */
       scrollbar-width: none;
       /* Firefox */
+    }
+
+    /* Disable image dragging WITHOUT hiding them */
+    img {
+      -webkit-user-drag: none;
+      user-drag: none;
+      /* ❌ REMOVE pointer-events: none — it breaks image loading */
     }
 
     @keyframes wave {
