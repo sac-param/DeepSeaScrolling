@@ -1,74 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deep Sea Explorer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      /* Custom scrollbar handling for a cleaner look */
-      body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        background-color: #000;
-      }
-      /* Hide scrollbar for Chrome, Safari and Opera */
-      .no-scrollbar::-webkit-scrollbar {
-          display: none;
-      }
-      /* Hide scrollbar for IE, Edge and Firefox */
-      .no-scrollbar {
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;  /* Firefox */
-      }
-      
-      @keyframes wave {
-        0% { background-position: 0% 50%; }
-        100% { background-position: 100% 50%; }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Sea Explorer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom scrollbar handling for a cleaner look */
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background-color: #000;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    body::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+
+    @keyframes wave {
+      0% {
+        background-position: 0% 50%;
       }
 
-      @keyframes shimmer {
-        0% { background-position: 0% 0%; }
-        100% { background-position: 100% 100%; }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: 0% 0%;
       }
 
-      /* Infinite horizontal slide for seamless waves */
-      @keyframes wave-slide {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
+      100% {
+        background-position: 100% 100%;
+      }
+    }
+
+    /* Infinite horizontal slide for seamless waves */
+    @keyframes wave-slide {
+      0% {
+        transform: translateX(0);
       }
 
-      /* Bubble Animation */
-      .bubble {
-        position: absolute;
-        bottom: -50px; /* Start below the viewport */
-        background: white;
-        border-radius: 50%;
-        animation-name: bubble-rise;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* Bubble Animation */
+    .bubble {
+      position: absolute;
+      bottom: -50px;
+      /* Start below the viewport */
+      background: white;
+      border-radius: 50%;
+      animation-name: bubble-rise;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes bubble-rise {
+      0% {
+        transform: translateY(0) translateX(0);
       }
 
-      @keyframes bubble-rise {
-        0% {
-          transform: translateY(0) translateX(0);
-        }
-        25% {
-          transform: translateY(-25vh) translateX(10px);
-        }
-        50% {
-          transform: translateY(-50vh) translateX(-10px);
-        }
-        75% {
-          transform: translateY(-75vh) translateX(10px);
-        }
-        100% {
-          transform: translateY(-120vh) translateX(0);
-        }
+      25% {
+        transform: translateY(-25vh) translateX(10px);
       }
-      
-    </style>
+
+      50% {
+        transform: translateY(-50vh) translateX(-10px);
+      }
+
+      75% {
+        transform: translateY(-75vh) translateX(10px);
+      }
+
+      100% {
+        transform: translateY(-120vh) translateX(0);
+      }
+    }
+  </style>
   <script type="importmap">
 {
   "imports": {
@@ -79,10 +109,12 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/index.css">
 </head>
-  <body>
-    <div id="root"></div>
+
+<body>
+  <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>
