@@ -16,23 +16,23 @@ const sizeClassMap = {
 const CreatureCard: React.FC<CreatureCardProps> = ({ creature, index }) => {
   const imageUrl = creature.imageUrl;
 
-  // 3 columns
   const column = index % 3;
   const row = Math.floor(index / 3);
 
-  // 8 columns, unevenly spaced to feel more natural/organic
-  const columnOffsets = [
-    [7, 16, 28],   // left group   — tight near left edge
-    [38, 50],      // center-left
-    [60, 72],      // center-right
-    [82, 93],      // right group  — tight near right edge
-  ];
+  // More spread out - prevents overlap
+const columnOffsets = [
+  [8, 22, 38],   // left group
+  [50, 65],      // center group  
+  [78, 92],      // right group
+];
 
-  const horizontalOffset = columnOffsets[column][row % 4];
+  // ✅ Only fix: use each group's own length instead of hardcoded 4
+  const group = columnOffsets[column % columnOffsets.length];
+  const horizontalOffset = group[row % group.length];
 
   const imageSizeClass =
     sizeClassMap[
-    (creature.sizeCategory as keyof typeof sizeClassMap) || 'Small'
+      (creature.sizeCategory as keyof typeof sizeClassMap) || 'Small'
     ] || sizeClassMap.Small;
 
   return (
@@ -66,7 +66,6 @@ const CreatureCard: React.FC<CreatureCardProps> = ({ creature, index }) => {
         <h3 className="text-[11px] md:text-lg font-bold text-white uppercase tracking-widest leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] opacity-80 group-hover:opacity-100 transition-opacity break-words">
           {creature.name}
         </h3>
-
         <p className="text-[10px] md:text-xs text-cyan-200 font-mono mt-1 opacity-60 drop-shadow-md">
           {creature.depth}m
         </p>

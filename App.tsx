@@ -62,7 +62,7 @@ const App: React.FC = () => {
   return (
     <div className="relative min-h-screen text-white font-sans selection:bg-cyan-500 selection:text-white">
       
-      {/* Main Container that defines the total scrollable height */}
+    
       <div 
         style={{ 
           height: `${MAX_DEPTH * PIXELS_PER_METER + INTRO_HEIGHT + 1000}px`,
