@@ -76,7 +76,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 4,
     description: "Can hop on land.",
     imageUrl: "/images/Blenny.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '2',
@@ -84,7 +84,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 8,
     description: "Share burrows with shrimp.",
     imageUrl: "/images/Gobies.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '3',
@@ -92,7 +92,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 13,
     description: "Males carry the eggs.",
     imageUrl: "/images/Pipefish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '4',
@@ -140,7 +140,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 39,
     description: "Lacks stomach and teeth.",
     imageUrl: "/images/Seahorse.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '10',
@@ -148,7 +148,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 44,
     description: "Sleeps in mucus bubble.",
     imageUrl: "/images/Parrotfish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '11',
@@ -180,7 +180,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 61,
     description: "Mimics floating sea kelp.",
     imageUrl: "/images/Leafy Sea Dragon.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '15',
@@ -204,12 +204,12 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 75,
     description: "Some act as cleaners.",
     imageUrl: "/images/Wrasse1.3.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '18',
     name: "Green Sea Turtle",
-    depth: 79,
+    depth: 88,
     description: "Holds breath five hours.",
     imageUrl: "/images/GreenSeaTurtle1.3.png",
     sizeCategory: "Big"
@@ -220,7 +220,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 83,
     description: "Snaps at everything nearby.",
     imageUrl: "/images/Bluefish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '20',
@@ -257,7 +257,7 @@ export const SEA_CREATURES: SeaCreature[] = [
   {
     id: '24',
     name: "Sea Turtle",
-    depth: 105,
+    depth: 110,
     description: "Returns to birth beach.",
     imageUrl: "/images/SeaTurtle1.3.png",
     sizeCategory: "Big"
@@ -268,7 +268,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 110,
     description: "Feeds mostly on sponges.",
     imageUrl: "/images/AngelFish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '26',
@@ -308,7 +308,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 132,
     description: "Massive schools called bait-balls.",
     imageUrl: "/images/Sardine.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '31',
@@ -316,7 +316,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 136,
     description: "Breathes with mouth open.",
     imageUrl: "/images/Anchovy1.0.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '32',
@@ -364,7 +364,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 163,
     description: "Communicates via gas bubbles.",
     imageUrl: "/images/Herring.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '38',
@@ -401,7 +401,7 @@ export const SEA_CREATURES: SeaCreature[] = [
   {
     id: '42',
     name: "Pelagic Stingray",
-    depth: 185,
+    depth: 170,
     description: "Only ray in open-ocean.",
     imageUrl: "/images/PelagicStingray.png",
     sizeCategory: "Big"
@@ -412,7 +412,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 189,
     description: "Teeth on its tongue.",
     imageUrl: "/images/Lizardfish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '44',
@@ -425,10 +425,10 @@ export const SEA_CREATURES: SeaCreature[] = [
   {
     id: '45',
     name: "Haddock",
-    depth: 198,
+    depth: 200,
     description: "Black \"Devil's thumbprint\" mark.",
     imageUrl: "/images/Haddock1.1.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '46',
@@ -484,7 +484,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 435,
     description: "Lights up entire bays.",
     imageUrl: "/images/FireflySquid.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '53',
@@ -508,7 +508,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 537,
     description: "Endures extreme Antarctic cold.",
     imageUrl: "/images/EmperorPenguin.png",
-    sizeCategory: "Big"
+    sizeCategory: "Large"
   },
   {
     id: '56',
@@ -532,7 +532,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 639,
     description: "Swimming predatory sea snail.",
     imageUrl: "/images/SeaAngel.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '59',
@@ -548,7 +548,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 707,
     description: "Glows bright neon green.",
     imageUrl: "/images/ChainCatshark1.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '61',
@@ -580,7 +580,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 844,
     description: "Upward looking green eyes.",
     imageUrl: "/images/BarreleyeFish1.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '65',
@@ -588,7 +588,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 878,
     description: "Lives nearly 100 years.",
     imageUrl: "/images/Spiny Dogfish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '66',
@@ -596,7 +596,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 912,
     description: "Lives over 150 years.",
     imageUrl: "/images/OrangeRoughy.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '67',
@@ -604,15 +604,15 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 946,
     description: "Neither squid nor octopus.",
     imageUrl: "/images/vampiresquid.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '68',
     name: "Hatchetfish",
-    depth: 980,
+    depth: 965,
     description: "Ultra thin silver body.",
     imageUrl: "/images/Hatchetfish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '69',
@@ -620,7 +620,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 1050,
     description: "Dives into midnight zone.",
     imageUrl: "/images/LeatherbackTurtle1.png",
-    sizeCategory: "Large"
+    sizeCategory: "Custom"
   },
   {
     id: '70',
@@ -628,7 +628,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 1116,
     description: "Melts at sea level.",
     imageUrl: "/images/blobfish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '71',
@@ -636,7 +636,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 1182,
     description: "Most common deep-sea fish.",
     imageUrl: "/images/Lanternfish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Custom"
   },
   {
     id: '72',
@@ -652,7 +652,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 1314,
     description: "Walks on ocean floor.",
     imageUrl: "/images/Deep-seaBatfish1.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '74',
@@ -660,7 +660,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 1380,
     description: "Shoots jaw forward fast.",
     imageUrl: "/images/GoblinShark.png",
-    sizeCategory: "Big"
+    sizeCategory: "Large"
   },
   {
     id: '75',
@@ -668,7 +668,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 1445,
     description: "Long colonial rocket-ship body.",
     imageUrl: "/images/Marrusorthocanna.png",
-    sizeCategory: "Big"
+    sizeCategory: "Large"
   },
   {
     id: '76',
@@ -676,7 +676,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 1511,
     description: "Looks like alien spacecraft.",
     imageUrl: "/images/CosmicJellyfish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '77',
@@ -684,7 +684,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 1577,
     description: "Sees light from below.",
     imageUrl: "/images/PearleyeFish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Custom"
   },
   {
     id: '78',
@@ -692,7 +692,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 1643,
     description: "Feeds on whale bones.",
     imageUrl: "/images/VigtorniellaWorm.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '79',
@@ -700,7 +700,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 1709,
     description: "Has 300 needle-like teeth.",
     imageUrl: "/images/FrilledShark.png",
-    sizeCategory: "Big"
+    sizeCategory: "Custom"
   },
   {
     id: '80',
@@ -708,7 +708,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 1775,
     description: "Older than the dinosaurs.",
     imageUrl: "/images/ChimaeraGhostShark1.png",
-    sizeCategory: "Big"
+    sizeCategory: "Custom"
   },
   {
     id: '81',
@@ -716,7 +716,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 1841,
     description: "Dotted with colorful lights.",
     imageUrl: "/images/JewelSquid.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '82',
@@ -724,7 +724,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 1907,
     description: "Lights on its belly.",
     imageUrl: "/images/Lightfish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Custom"
   },
   {
     id: '83',
@@ -732,7 +732,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 1973,
     description: "Teeth are crystal clear.",
     imageUrl: "/images/Dragonfish1.png",
-    sizeCategory: "Small"
+    sizeCategory: "Custom"
   },
   {
     id: '84',
@@ -740,7 +740,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 2039,
     description: "Lacks long stinging tentacles.",
     imageUrl: "/images/bigredjellyfish.png",
-    sizeCategory: "Big"
+    sizeCategory: "Custom"
   },
   {
     id: '85',
@@ -748,7 +748,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 2105,
     description: "Sees red \"invisible\" light.",
     imageUrl: "/images/StoplightLoosejaw.png",
-    sizeCategory: "Small"
+    sizeCategory: "Custom"
   },
   {
     id: '86',
@@ -756,7 +756,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 2170,
     description: "Cannot close its mouth.",
     imageUrl: "/images/SabertoothFish2.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '87',
@@ -764,7 +764,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 2236,
     description: "Giant deep-sea pill bug.",
     imageUrl: "/images/giantisopod.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '88',
@@ -772,7 +772,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 2302,
     description: "Closes like land plant.",
     imageUrl: "/images/VenusFlytrapAnemone.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '89',
@@ -780,7 +780,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 2368,
     description: "Floats like a balloon.",
     imageUrl: "/images/CockatooSquid1.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '90',
@@ -788,7 +788,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 2434,
     description: "Teeth too big for mouth.",
     imageUrl: "/images/Viperfish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '91',
@@ -796,7 +796,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 2500,
     description: "Almost completely see-through body.",
     imageUrl: "/images/GlassSquid.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '92',
@@ -812,7 +812,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 2632,
     description: "Sold as \"Chilean Seabass\".",
     imageUrl: "/images/PatagonianToothfish.png",
-    sizeCategory: "Big"
+    sizeCategory: "Custom"
   },
   {
     id: '94',
@@ -820,7 +820,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 2698,
     description: "Moves like a ghost.",
     imageUrl: "/images/TelescopeOctopus.png",
-    sizeCategory: "Small"
+    sizeCategory: "Custom"
   },
   {
     id: '95',
@@ -828,7 +828,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 2764,
     description: "Oldest living vertebrate animal.",
     imageUrl: "/images/GreenlandShark.png",
-    sizeCategory: "Large"
+    sizeCategory: "Custom"
   },
   {
     id: '96',
@@ -836,7 +836,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 2830,
     description: "Females are much larger.",
     imageUrl: "/images/BlackDragonfish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '97',
@@ -844,7 +844,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 2895,
     description: "Male fuses to female.",
     imageUrl: "/images/Anglerfish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '98',
@@ -852,7 +852,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 2961,
     description: "Grows food on arms.",
     imageUrl: "/images/YetiCrab1.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '99',
@@ -868,7 +868,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 3093,
     description: "Related to the cusk-eel.",
     imageUrl: "/images/Brotula.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '101',
@@ -876,7 +876,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 3159,
     description: "Mostly mouth and tail.",
     imageUrl: "/images/GulperEel.png",
-    sizeCategory: "Big"
+    sizeCategory: "Custom"
   },
   {
     id: '102',
@@ -884,7 +884,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 3225,
     description: "No mouth or stomach.",
     imageUrl: "/images/GiantTubeWorm.png",
-    sizeCategory: "Big"
+    sizeCategory: "Large"
   },
   {
     id: '103',
@@ -892,7 +892,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 3291,
     description: "Has an iron shell.",
     imageUrl: "/images/Scaly-footSnail.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '104',
@@ -908,15 +908,15 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 3423,
     description: "Swimming deep-sea cucumber.",
     imageUrl: "/images/HeadlessChickenFish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Custom"
   },
   {
     id: '106',
     name: "Fangtooth",
-    depth: 3489,
+    depth: 3469,
     description: "Toughest fish in abyss.",
     imageUrl: "/images/fangtooth.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '107',
@@ -924,7 +924,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 3555,
     description: "Dissolves bone with acid.",
     imageUrl: "/images/ZombieWorm.png",
-    sizeCategory: "Micro"
+    sizeCategory: "Large"
   },
   {
     id: '108',
@@ -932,7 +932,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 3620,
     description: "Extremely long glowing lure.",
     imageUrl: "/images/Gigantactis.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '109',
@@ -940,15 +940,15 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 3686,
     description: "Takes round bites out-of-prey.",
     imageUrl: "/images/cookiecuttershark.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '110',
     name: "Pelican Eel",
-    depth: 3752,
+    depth: 3762,
     description: "Swallows prey whole easily.",
     imageUrl: "/images/PelicanEel.png",
-    sizeCategory: "Big"
+    sizeCategory: "Large"
   },
   {
     id: '111',
@@ -956,7 +956,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 3818,
     description: "Glows when it's touched.",
     imageUrl: "/images/SeaPen.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '112',
@@ -964,7 +964,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 3884,
     description: "Traps prey with Velcro-hooks.",
     imageUrl: "/images/HarpSponge.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '113',
@@ -972,7 +972,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 3950,
     description: "Colonies grow very slowly.",
     imageUrl: "/images/bubblegumcoral.png",
-    sizeCategory: "Big"
+    sizeCategory: "Large"
   },
   {
     id: '114',
@@ -980,7 +980,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 4200,
     description: "\"Burglar alarm\" light flashes.",
     imageUrl: "/images/AtollaJellyfish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '115',
@@ -988,7 +988,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 4443,
     description: "Deepest living octopus species.",
     imageUrl: "/images/DumboOctopus.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '116',
@@ -996,7 +996,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 4686,
     description: "Head has no face.",
     imageUrl: "/images/FacelessFish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '117',
@@ -1004,7 +1004,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 4929,
     description: "Stands on three fins.",
     imageUrl: "/images/TripodFish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Custom"
   },
   {
     id: '118',
@@ -1012,7 +1012,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 5171,
     description: "Smells food miles away.",
     imageUrl: "/images/AbyssalGrenadier.png",
-    sizeCategory: "Big"
+    sizeCategory: "Large"
   },
   {
     id: '119',
@@ -1020,7 +1020,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 5414,
     description: "Feels vibrations through fins.",
     imageUrl: "/images/AbyssalSpiderfish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Custom"
   },
   {
     id: '120',
@@ -1028,7 +1028,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 5657,
     description: "Walks on water-filled tubes.",
     imageUrl: "/images/SeaPig.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '121',
@@ -1036,15 +1036,15 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 5900,
     description: "Lives on trench walls.",
     imageUrl: "/images/Deep-seaAnemone.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '122',
     name: "Giant Amphipod",
-    depth: 6500,
+    depth: 7010,
     description: "Giant shrimp-like scavenger.",
     imageUrl: "/images/GiantAmphipod.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '123',
@@ -1052,7 +1052,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 6895,
     description: "Largest animal using cilia.",
     imageUrl: "/images/CombJelly.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '124',
@@ -1060,7 +1060,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 7291,
     description: "Endures extreme trench pressure.",
     imageUrl: "/images/Notolipariskermadecensis.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '125',
@@ -1068,7 +1068,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 7686,
     description: "Found in Japan Trench.",
     imageUrl: "/images/Pseudoliparisamblystomopsis.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '126',
@@ -1076,7 +1076,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 8082,
     description: "Dominates the trench floor.",
     imageUrl: "/images/HadalSeaCucumber.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '127',
@@ -1084,7 +1084,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 8477,
     description: "Has partially transparent skin.",
     imageUrl: "/images/HadalSnailfish1.png",
-    sizeCategory: "Small"
+    sizeCategory: "Big"
   },
   {
     id: '128',
@@ -1092,7 +1092,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 8873,
     description: "Named after HMS Challenger.",
     imageUrl: "/images/Pseudoliparisswirei.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '129',
@@ -1100,7 +1100,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 9268,
     description: "Lives in total darkness.",
     imageUrl: "/images/DeepTrenchSnailfish.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   },
   {
     id: '130',
@@ -1108,7 +1108,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 9664,
     description: "Deepest recorded fish ever.",
     imageUrl: "/images/CuskEel.png",
-    sizeCategory: "Small"
+    sizeCategory: "Custom"
   },
   {
     id: '131',
@@ -1116,7 +1116,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 10059,
     description: "Not bacteria but similar.",
     imageUrl: "/images/Archaea.png",
-    sizeCategory: "Micro"
+    sizeCategory: "Large"
   },
   {
     id: '132',
@@ -1124,7 +1124,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 10455,
     description: "Builds tiny ornate shells.",
     imageUrl: "/images/Foraminifera.png",
-    sizeCategory: "Micro"
+    sizeCategory: "Big"
   },
   {
     id: '133',
@@ -1132,6 +1132,6 @@ export const SEA_CREATURES: SeaCreature[] = [
     depth: 10850,
     description: "Survives where others cannot.",
     imageUrl: "/images/PolychaeteWorms.png",
-    sizeCategory: "Small"
+    sizeCategory: "Large"
   }
 ];

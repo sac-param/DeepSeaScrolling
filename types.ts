@@ -6,7 +6,7 @@
 //   imageUrl?: string;
 // }
 // types.ts
-export type CreatureSizeCategory = 'Micro' | 'Small' | 'Big' | 'Large';
+export type CreatureSizeCategory = 'Micro' | 'Small' | 'Big' | 'Large'| 'Custom';
 
 export interface SeaCreature {
   id: string;
