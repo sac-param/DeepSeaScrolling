@@ -1,5 +1,6 @@
 import { OceanZone, SeaCreature } from './types';
-
+const asset = (fileName: string) =>
+  `${import.meta.env.BASE_URL}images/${fileName}`;
 export const MAX_DEPTH = 11000;
 
 // default scale for most of the ocean
@@ -75,7 +76,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Blenny",
     depth: 4,
     description: "Can hop on land.",
-    imageUrl: "/images/Blenny.png",
+    imageUrl: asset('Blenny.png'),
     sizeCategory: "Big"
   },
   {
@@ -83,7 +84,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Gobies",
     depth: 8,
     description: "Share burrows with shrimp.",
-    imageUrl: "/images/Gobies.png",
+    imageUrl: asset('Gobies.png'),
     sizeCategory: "Big"
   },
   {
@@ -91,7 +92,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Pipefish",
     depth: 13,
     description: "Males carry the eggs.",
-    imageUrl: "/images/Pipefish.png",
+    imageUrl: asset('Pipefish.png'),
     sizeCategory: "Big"
   },
   {
@@ -99,7 +100,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Flying fish",
     depth: 17,
     description: "Also known as the Killer Whale, an apex predator.",
-    imageUrl: "/images/FlyingFish.png",
+    imageUrl: asset('FlyingFish.png'),
     sizeCategory: "Small"
   },
   {
@@ -107,7 +108,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Barramundi",
     depth: 22,
     description: "Changes sex as adultn.",
-    imageUrl: "/images/Barramundi.png",
+    imageUrl: asset('Barramundi.png'),
     sizeCategory: "Big"
   },
   {
@@ -115,7 +116,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Damselfish",
     depth: 26,
     description: "Farms its own algae.",
-    imageUrl: "/images/Damselfish.png",
+    imageUrl: asset('Damselfish.png'),
     sizeCategory: "Small"
   },
   {
@@ -123,7 +124,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Dolphinfish (Mahi-mahi)",
     depth: 30,
     description: "Colors fade after death.",
-    imageUrl: "/images/Dolphinfish.png",
+    imageUrl: asset('Dolphinfish.png'),
     sizeCategory: "Big"
   },
   {
@@ -131,7 +132,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Blue Tang",
     depth: 35,
     description: "Sharp tail-spine like scalpels.",
-    imageUrl: "/images/BlueTang.png",
+    imageUrl: asset('BlueTang.png'),
     sizeCategory: "Small"
   },
   {
@@ -139,7 +140,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Seahorse",
     depth: 39,
     description: "Lacks stomach and teeth.",
-    imageUrl: "/images/Seahorse.png",
+    imageUrl: asset('Seahorse.png'),
     sizeCategory: "Big"
   },
   {
@@ -147,7 +148,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Parrotfish",
     depth: 44,
     description: "Sleeps in mucus bubble.",
-    imageUrl: "/images/Parrotfish.png",
+    imageUrl: asset('Parrotfish.png'),
     sizeCategory: "Big"
   },
   {
@@ -155,7 +156,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Striped Bass",
     depth: 48,
     description: "Can live thirty years.",
-    imageUrl: "/images/StripedBass.png",
+    imageUrl: asset('StripedBass.png'),
     sizeCategory: "Big"
   },
   {
@@ -163,7 +164,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Salmon",
     depth: 52,
     description: "Navigates using Earth's magnetic-field.",
-    imageUrl: "/images/Salmon.png",
+    imageUrl: asset('Salmon.png'),
     sizeCategory: "Big"
   },
   {
@@ -171,7 +172,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Clownfish",
     depth: 57,
     description: "Immune to anemone stings.",
-    imageUrl: "/images/Clownfish.png",
+    imageUrl: asset('Clownfish.png'),
     sizeCategory: "Small"
   },
   {
@@ -179,7 +180,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Leafy Sea Dragon",
     depth: 61,
     description: "Mimics floating sea kelp.",
-    imageUrl: "/images/Leafy Sea Dragon.png",
+    imageUrl: asset('Leafy Sea Dragon.png'),
     sizeCategory: "Big"
   },
   {
@@ -187,7 +188,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Surgeonfish",
     depth: 66,
     description: "Eats algae off turtles.",
-    imageUrl: "/images/Surgeonfish.png",
+    imageUrl: asset('Surgeonfish.png'),
     sizeCategory: "Small"
   },
   {
@@ -195,7 +196,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Black Drum",
     depth: 70,
     description: "Makes loud drumming sounds.",
-    imageUrl: "/images/BlackDrum.png",
+    imageUrl: asset('BlackDrum.png'),
     sizeCategory: "Big"
   },
   {
@@ -203,7 +204,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Wrasse",
     depth: 75,
     description: "Some act as cleaners.",
-    imageUrl: "/images/Wrasse1.3.png",
+    imageUrl: asset('Wrasse1.3.png'),
     sizeCategory: "Big"
   },
   {
@@ -211,7 +212,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Green Sea Turtle",
     depth: 88,
     description: "Holds breath five hours.",
-    imageUrl: "/images/GreenSeaTurtle1.3.png",
+    imageUrl: asset('GreenSeaTurtle1.3.png'),
     sizeCategory: "Big"
   },
   {
@@ -219,7 +220,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Bluefish",
     depth: 83,
     description: "Snaps at everything nearby.",
-    imageUrl: "/images/Bluefish.png",
+    imageUrl: asset('Bluefish.png'),
     sizeCategory: "Big"
   },
   {
@@ -227,7 +228,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Butterflyfish",
     depth: 88,
     description: "Mates for entire life.",
-    imageUrl: "/images/ButterflyFish.png",
+    imageUrl: asset('ButterflyFish.png'),
     sizeCategory: "Small"
   },
   {
@@ -235,7 +236,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Reef Shark",
     depth: 92,
     description: "Must swim to breathe.",
-    imageUrl: "/images/ReefShark1.3.png",
+    imageUrl: asset('ReefShark1.3.png'),
     sizeCategory: "Big"
   },
   {
@@ -243,7 +244,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Boxfish",
     depth: 97,
     description: "Secretes deadly skin toxins.",
-    imageUrl: "/images/Boxfish1.0.png",
+    imageUrl: asset('Boxfish1.0.png'),
     sizeCategory: "Small"
   },
   {
@@ -251,7 +252,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Stingray",
     depth: 101,
     description: "Closely related to sharks.",
-    imageUrl: "/images/Stingray.png",
+    imageUrl: asset('Stingray.png'),
     sizeCategory: "Big"
   },
   {
@@ -259,7 +260,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Sea Turtle",
     depth: 110,
     description: "Returns to birth beach.",
-    imageUrl: "/images/SeaTurtle1.3.png",
+    imageUrl: asset('SeaTurtle1.3.png'),
     sizeCategory: "Big"
   },
   {
@@ -267,7 +268,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Angelfish",
     depth: 110,
     description: "Feeds mostly on sponges.",
-    imageUrl: "/images/AngelFish.png",
+    imageUrl: asset('AngelFish.png'),
     sizeCategory: "Big"
   },
   {
@@ -275,7 +276,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Barracuda",
     depth: 114,
     description: "Attracted to shiny objects.",
-    imageUrl: "/images/Barracuda.png",
+    imageUrl: asset('Barracuda.png'),
     sizeCategory: "Big"
   },
   {
@@ -283,7 +284,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Velvet Crab",
     depth: 119,
     description: "Known as \"Fiddler\" crab.",
-    imageUrl: "/images/VelvetCrab.png",
+    imageUrl: asset('VelvetCrab.png'),
     sizeCategory: "Small"
   },
   {
@@ -291,7 +292,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Bull Shark",
     depth: 123,
     description: "Swims in fresh water.",
-    imageUrl: "/images/BullShark.png",
+    imageUrl: asset('BullShark.png'),
     sizeCategory: "Large"
   },
   {
@@ -299,7 +300,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Moray Eel",
     depth: 127,
     description: "Has second set of jaws.",
-    imageUrl: "/images/MorayEel1.0.png",
+    imageUrl: asset('MorayEel1.0.png'),
     sizeCategory: "Big"
   },
   {
@@ -307,7 +308,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Sardine",
     depth: 132,
     description: "Massive schools called bait-balls.",
-    imageUrl: "/images/Sardine.png",
+    imageUrl: asset('Sardine.png'),
     sizeCategory: "Big"
   },
   {
@@ -315,7 +316,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Anchovy",
     depth: 136,
     description: "Breathes with mouth open.",
-    imageUrl: "/images/Anchovy1.0.png",
+    imageUrl: asset('Anchovy1.0.png'),
     sizeCategory: "Big"
   },
   {
@@ -323,7 +324,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Triggerfish",
     depth: 141,
     description: "Rotates eyes independently.",
-    imageUrl: "/images/Triggerfish.png",
+    imageUrl: asset('Triggerfish.png'),
     sizeCategory: "Small"
   },
   {
@@ -331,7 +332,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Atlantic Mackerel",
     depth: 145,
     description: "Lacks a swim bladder.",
-    imageUrl: "/images/AtlanticMackerel.png",
+    imageUrl: asset('AtlanticMackerel.png'),
     sizeCategory: "Small"
   },
   {
@@ -339,7 +340,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Manta Ray",
     depth: 150,
     description: "Largest brain of fish.",
-    imageUrl: "/images/Manta Ray.png",
+    imageUrl: asset('Manta Ray.png'),
     sizeCategory: "Large"
   },
   {
@@ -347,7 +348,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Lionfish",
     depth: 154,
     description: "Can expand stomach thirty-fold.",
-    imageUrl: "/images/Lionfish.png",
+    imageUrl: asset('Lionfish.png'),
     sizeCategory: "Small"
   },
   {
@@ -355,7 +356,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Mackerel",
     depth: 158,
     description: "Highly migratory silver schools.",
-    imageUrl: "/images/Mackerel.png",
+    imageUrl: asset('Mackerel.png'),
     sizeCategory: "Small"
   },
   {
@@ -363,7 +364,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Herring",
     depth: 163,
     description: "Communicates via gas bubbles.",
-    imageUrl: "/images/Herring.png",
+    imageUrl: asset('Herring.png'),
     sizeCategory: "Big"
   },
   {
@@ -371,7 +372,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Killer Whale (Orca)",
     depth: 167,
     description: "Actually a large dolphin.",
-    imageUrl: "/images/Killer Whale (Orca)1.0.png",
+    imageUrl: asset('Killer Whale (Orca)1.0.png'),
     sizeCategory: "Large"
   },
   {
@@ -379,7 +380,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Wolf Eel",
     depth: 172,
     description: "Crushes hard sea urchins.",
-    imageUrl: "/images/WolfEel.png",
+    imageUrl: asset('WolfEel.png'),
     sizeCategory: "Big"
   },
   {
@@ -387,7 +388,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Marlin",
     depth: 176,
     description: "Fastest fish in ocean.",
-    imageUrl: "/images/Marlin1.png",
+    imageUrl: asset('Marlin1.png'),
     sizeCategory: "Large"
   },
   {
@@ -395,7 +396,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Blue Whale",
     depth: 180,
     description: "Heart size of car.",
-    imageUrl: "/images/BlueWhale.png",
+    imageUrl: asset('BlueWhale.png'),
     sizeCategory: "Large"
   },
   {
@@ -403,7 +404,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Pelagic Stingray",
     depth: 170,
     description: "Only ray in open-ocean.",
-    imageUrl: "/images/PelagicStingray.png",
+    imageUrl: asset('PelagicStingray.png'),
     sizeCategory: "Big"
   },
   {
@@ -411,7 +412,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Lizardfish",
     depth: 189,
     description: "Teeth on its tongue.",
-    imageUrl: "/images/Lizardfish.png",
+    imageUrl: asset('Lizardfish.png'),
     sizeCategory: "Large"
   },
   {
@@ -419,7 +420,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Atlantic Cod",
     depth: 194,
     description: "Thrives in freezing water.",
-    imageUrl: "/images/AtlanticCod1.png",
+    imageUrl: asset('AtlanticCod1.png'),
     sizeCategory: "Big"
   },
   {
@@ -427,7 +428,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Haddock",
     depth: 200,
     description: "Black \"Devil's thumbprint\" mark.",
-    imageUrl: "/images/Haddock1.1.png",
+    imageUrl: asset('Haddock1.1.png'),
     sizeCategory: "Big"
   },
   {
@@ -435,7 +436,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Blue Shark",
     depth: 230,
     description: "Known as ocean wolves.",
-    imageUrl: "/images/BlueShark.png",
+    imageUrl: asset('BlueShark.png'),
     sizeCategory: "Big"
   },
   {
@@ -443,7 +444,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Pacific Cod",
     depth: 264,
     description: "Has a chin whisker.",
-    imageUrl: "/images/PacificCod1.png",
+    imageUrl: asset('PacificCod1.png'),
     sizeCategory: "Big"
   },
   {
@@ -451,7 +452,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Bottlenose Dolphin",
     depth: 298,
     description: "Names itself with whistles.",
-    imageUrl: "/images/BottlenoseDolphin.png",
+    imageUrl: asset('BottlenoseDolphin.png'),
     sizeCategory: "Big"
   },
   {
@@ -459,7 +460,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Gummy Shark",
     depth: 332,
     description: "Has no sharp teeth.",
-    imageUrl: "/images/GummyShark.png",
+    imageUrl: asset('GummyShark.png'),
     sizeCategory: "Big"
   },
   {
@@ -467,7 +468,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Queen Snapper",
     depth: 366,
     description: "Lives near rocky ledges.",
-    imageUrl: "/images/QueenSnapper.png",
+    imageUrl: asset('QueenSnapper.png'),
     sizeCategory: "Big"
   },
   {
@@ -475,7 +476,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Terrible Claw Lobster",
     depth: 400,
     description: "One claw vastly larger.",
-    imageUrl: "/images/terribleclawlobster.png",
+    imageUrl: asset('terribleclawlobster.png'),
     sizeCategory: "Small"
   },
   {
@@ -483,7 +484,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Firefly Squid",
     depth: 435,
     description: "Lights up entire bays.",
-    imageUrl: "/images/FireflySquid.png",
+    imageUrl: asset('FireflySquid.png'),
     sizeCategory: "Big"
   },
   {
@@ -491,7 +492,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Japanese Spider Crab",
     depth: 469,
     description: "Leg span twelve feet.",
-    imageUrl: "/images/JapaneseSpiderCrab1.png",
+    imageUrl: asset('JapaneseSpiderCrab1.png'),
     sizeCategory: "Big"
   },
   {
@@ -499,7 +500,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Tuna",
     depth: 503,
     description: "Never stops swimming fast.",
-    imageUrl: "/images/Tuna.png",
+    imageUrl: asset('Tuna.png'),
     sizeCategory: "Big"
   },
   {
@@ -507,7 +508,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Emperor Penguin",
     depth: 537,
     description: "Endures extreme Antarctic cold.",
-    imageUrl: "/images/EmperorPenguin.png",
+    imageUrl: asset('EmperorPenguin.png'),
     sizeCategory: "Large"
   },
   {
@@ -515,7 +516,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Sunfish (Mola mola)",
     depth: 571,
     description: "Heaviest bony fish known.",
-    imageUrl: "/images/SunfishMolamola.png",
+    imageUrl: asset('SunfishMolamola.png'),
     sizeCategory: "Large"
   },
   {
@@ -523,7 +524,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Jellyfish",
     depth: 605,
     description: "Made 95% of water.",
-    imageUrl: "/images/Jellyfish1.3.png",
+    imageUrl: asset('Jellyfish1.3.png'),
     sizeCategory: "Big"
   },
   {
@@ -531,7 +532,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Sea Angel",
     depth: 639,
     description: "Swimming predatory sea snail.",
-    imageUrl: "/images/SeaAngel.png",
+    imageUrl: asset('SeaAngel.png'),
     sizeCategory: "Big"
   },
   {
@@ -539,7 +540,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Swordfish",
     depth: 673,
     description: "Heats eyes for hunting.",
-    imageUrl: "/images/Swordfish.png",
+    imageUrl: asset('Swordfish.png'),
     sizeCategory: "Large"
   },
   {
@@ -547,7 +548,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Chain Catshark",
     depth: 707,
     description: "Glows bright neon green.",
-    imageUrl: "/images/ChainCatshark1.png",
+    imageUrl: asset('ChainCatshark1.png'),
     sizeCategory: "Large"
   },
   {
@@ -555,7 +556,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Megamouth Shark",
     depth: 741,
     description: "Only 100 ever seen.",
-    imageUrl: "/images/Megamouth Shark.png",
+    imageUrl: asset('Megamouth Shark.png'),
     sizeCategory: "Large"
   },
   {
@@ -563,7 +564,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Beluga Whale",
     depth: 775,
     description: "Can mimic human speech.",
-    imageUrl: "/images/BelugaWhale.png",
+    imageUrl: asset('BelugaWhale.png'),
     sizeCategory: "Large"
   },
   {
@@ -571,7 +572,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Monkfish",
     depth: 809,
     description: "Lures prey with \"fishing-pole\".",
-    imageUrl: "/images/Monkfish.png",
+    imageUrl: asset('Monkfish.png'),
     sizeCategory: "Big"
   },
   {
@@ -579,7 +580,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Barreleye Fish",
     depth: 844,
     description: "Upward looking green eyes.",
-    imageUrl: "/images/BarreleyeFish1.png",
+    imageUrl: asset('BarreleyeFish1.png'),
     sizeCategory: "Large"
   },
   {
@@ -587,7 +588,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Spiny Dogfish",
     depth: 878,
     description: "Lives nearly 100 years.",
-    imageUrl: "/images/Spiny Dogfish.png",
+    imageUrl: asset('Spiny Dogfish.png'),
     sizeCategory: "Large"
   },
   {
@@ -595,7 +596,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Orange Roughy",
     depth: 912,
     description: "Lives over 150 years.",
-    imageUrl: "/images/OrangeRoughy.png",
+    imageUrl: asset('OrangeRoughy.png'),
     sizeCategory: "Large"
   },
   {
@@ -603,7 +604,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Vampire Squid",
     depth: 946,
     description: "Neither squid nor octopus.",
-    imageUrl: "/images/vampiresquid.png",
+    imageUrl: asset('vampiresquid.png'),
     sizeCategory: "Large"
   },
   {
@@ -611,7 +612,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Hatchetfish",
     depth: 965,
     description: "Ultra thin silver body.",
-    imageUrl: "/images/Hatchetfish.png",
+    imageUrl: asset('Hatchetfish.png'),
     sizeCategory: "Large"
   },
   {
@@ -619,7 +620,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Leatherback Turtle",
     depth: 1050,
     description: "Dives into midnight zone.",
-    imageUrl: "/images/LeatherbackTurtle1.png",
+    imageUrl: asset('LeatherbackTurtle1.png'),
     sizeCategory: "Custom"
   },
   {
@@ -627,7 +628,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Blobfish",
     depth: 1116,
     description: "Melts at sea level.",
-    imageUrl: "/images/blobfish.png",
+    imageUrl: asset('blobfish.png'),
     sizeCategory: "Large"
   },
   {
@@ -635,7 +636,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Lanternfish",
     depth: 1182,
     description: "Most common deep-sea fish.",
-    imageUrl: "/images/Lanternfish.png",
+    imageUrl: asset('Lanternfish.png'),
     sizeCategory: "Custom"
   },
   {
@@ -643,7 +644,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Whale Shark",
     depth: 1248,
     description: "Skin six inches thick.",
-    imageUrl: "/images/Whale Shark.png",
+    imageUrl: asset('Whale Shark.png'),
     sizeCategory: "Large"
   },
   {
@@ -651,7 +652,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Deep-sea Batfish",
     depth: 1314,
     description: "Walks on ocean floor.",
-    imageUrl: "/images/Deep-seaBatfish1.png",
+    imageUrl: asset('Deep-seaBatfish1.png'),
     sizeCategory: "Large"
   },
   {
@@ -659,7 +660,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Goblin Shark",
     depth: 1380,
     description: "Shoots jaw forward fast.",
-    imageUrl: "/images/GoblinShark.png",
+    imageUrl: asset('GoblinShark.png'),
     sizeCategory: "Large"
   },
   {
@@ -667,7 +668,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Marrus orthocanna",
     depth: 1445,
     description: "Long colonial rocket-ship body.",
-    imageUrl: "/images/Marrusorthocanna.png",
+    imageUrl: asset('Marrusorthocanna.png'),
     sizeCategory: "Large"
   },
   {
@@ -675,7 +676,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Cosmic Jellyfish",
     depth: 1511,
     description: "Looks like alien spacecraft.",
-    imageUrl: "/images/CosmicJellyfish.png",
+    imageUrl: asset('CosmicJellyfish.png'),
     sizeCategory: "Large"
   },
   {
@@ -683,7 +684,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Pearleye",
     depth: 1577,
     description: "Sees light from below.",
-    imageUrl: "/images/PearleyeFish.png",
+    imageUrl: asset('PearleyeFish.png'),
     sizeCategory: "Custom"
   },
   {
@@ -691,7 +692,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Vigtorniella Worm",
     depth: 1643,
     description: "Feeds on whale bones.",
-    imageUrl: "/images/VigtorniellaWorm.png",
+    imageUrl: asset('VigtorniellaWorm.png'),
     sizeCategory: "Large"
   },
   {
@@ -699,7 +700,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Frilled Shark",
     depth: 1709,
     description: "Has 300 needle-like teeth.",
-    imageUrl: "/images/FrilledShark.png",
+    imageUrl: asset('FrilledShark.png'),
     sizeCategory: "Custom"
   },
   {
@@ -707,7 +708,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Chimaera (Ghost Shark)",
     depth: 1775,
     description: "Older than the dinosaurs.",
-    imageUrl: "/images/ChimaeraGhostShark1.png",
+    imageUrl: asset('ChimaeraGhostShark1.png'),
     sizeCategory: "Custom"
   },
   {
@@ -715,7 +716,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Jewel Squid",
     depth: 1841,
     description: "Dotted with colorful lights.",
-    imageUrl: "/images/JewelSquid.png",
+    imageUrl: asset('JewelSquid.png'),
     sizeCategory: "Big"
   },
   {
@@ -723,7 +724,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Lightfish",
     depth: 1907,
     description: "Lights on its belly.",
-    imageUrl: "/images/Lightfish.png",
+    imageUrl: asset('Lightfish.png'),
     sizeCategory: "Custom"
   },
   {
@@ -731,7 +732,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Dragonfish",
     depth: 1973,
     description: "Teeth are crystal clear.",
-    imageUrl: "/images/Dragonfish1.png",
+    imageUrl: asset('Dragonfish1.png'),
     sizeCategory: "Custom"
   },
   {
@@ -739,7 +740,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Big Red Jellyfish",
     depth: 2039,
     description: "Lacks long stinging tentacles.",
-    imageUrl: "/images/bigredjellyfish.png",
+    imageUrl: asset('bigredjellyfish.png'),
     sizeCategory: "Custom"
   },
   {
@@ -747,7 +748,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Stoplight Loosejaw",
     depth: 2105,
     description: "Sees red \"invisible\" light.",
-    imageUrl: "/images/StoplightLoosejaw.png",
+    imageUrl: asset('StoplightLoosejaw.png'),
     sizeCategory: "Custom"
   },
   {
@@ -755,7 +756,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Sabertooth Fish",
     depth: 2170,
     description: "Cannot close its mouth.",
-    imageUrl: "/images/SabertoothFish2.png",
+    imageUrl: asset('SabertoothFish2.png'),
     sizeCategory: "Large"
   },
   {
@@ -763,7 +764,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Giant Isopod",
     depth: 2236,
     description: "Giant deep-sea pill bug.",
-    imageUrl: "/images/giantisopod.png",
+    imageUrl: asset('giantisopod.png'),
     sizeCategory: "Large"
   },
   {
@@ -771,7 +772,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Venus Flytrap Anemone",
     depth: 2302,
     description: "Closes like land plant.",
-    imageUrl: "/images/VenusFlytrapAnemone.png",
+    imageUrl: asset('VenusFlytrapAnemone.png'),
     sizeCategory: "Large"
   },
   {
@@ -779,7 +780,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Cockatoo Squid",
     depth: 2368,
     description: "Floats like a balloon.",
-    imageUrl: "/images/CockatooSquid1.png",
+    imageUrl: asset('CockatooSquid1.png'),
     sizeCategory: "Large"
   },
   {
@@ -787,7 +788,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Viperfish",
     depth: 2434,
     description: "Teeth too big for mouth.",
-    imageUrl: "/images/Viperfish.png",
+    imageUrl: asset('Viperfish.png'),
     sizeCategory: "Large"
   },
   {
@@ -795,7 +796,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Glass Squid",
     depth: 2500,
     description: "Almost completely see-through body.",
-    imageUrl: "/images/GlassSquid.png",
+    imageUrl: asset('GlassSquid.png'),
     sizeCategory: "Large"
   },
   {
@@ -803,7 +804,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Elephant Seal",
     depth: 2566,
     description: "Dives for two hours.",
-    imageUrl: "/images/ElephantSeal.png",
+    imageUrl: asset('ElephantSeal.png'),
     sizeCategory: "Large"
   },
   {
@@ -811,7 +812,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Patagonian Toothfish",
     depth: 2632,
     description: "Sold as \"Chilean Seabass\".",
-    imageUrl: "/images/PatagonianToothfish.png",
+    imageUrl: asset('PatagonianToothfish.png'),
     sizeCategory: "Custom"
   },
   {
@@ -819,7 +820,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Telescope Octopus",
     depth: 2698,
     description: "Moves like a ghost.",
-    imageUrl: "/images/TelescopeOctopus.png",
+    imageUrl: asset('TelescopeOctopus.png'),
     sizeCategory: "Custom"
   },
   {
@@ -827,7 +828,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Greenland Shark",
     depth: 2764,
     description: "Oldest living vertebrate animal.",
-    imageUrl: "/images/GreenlandShark.png",
+    imageUrl: asset('GreenlandShark.png'),
     sizeCategory: "Custom"
   },
   {
@@ -835,7 +836,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Black Dragonfish",
     depth: 2830,
     description: "Females are much larger.",
-    imageUrl: "/images/BlackDragonfish.png",
+    imageUrl: asset('BlackDragonfish.png'),
     sizeCategory: "Large"
   },
   {
@@ -843,7 +844,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Anglerfish",
     depth: 2895,
     description: "Male fuses to female.",
-    imageUrl: "/images/Anglerfish.png",
+    imageUrl: asset('Anglerfish.png'),
     sizeCategory: "Large"
   },
   {
@@ -851,7 +852,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Yeti Crab",
     depth: 2961,
     description: "Grows food on arms.",
-    imageUrl: "/images/YetiCrab1.png",
+    imageUrl: asset('YetiCrab1.png'),
     sizeCategory: "Large"
   },
   {
@@ -859,7 +860,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Sperm Whale",
     depth: 3027,
     description: "Fights giant squid deep.",
-    imageUrl: "/images/SpermWhale.png",
+    imageUrl: asset('SpermWhale.png'),
     sizeCategory: "Large"
   },
   {
@@ -867,7 +868,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Brotula",
     depth: 3093,
     description: "Related to the cusk-eel.",
-    imageUrl: "/images/Brotula.png",
+    imageUrl: asset('Brotula.png'),
     sizeCategory: "Large"
   },
   {
@@ -875,7 +876,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Gulper Eel",
     depth: 3159,
     description: "Mostly mouth and tail.",
-    imageUrl: "/images/GulperEel.png",
+    imageUrl: asset('GulperEel.png'),
     sizeCategory: "Custom"
   },
   {
@@ -883,7 +884,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Giant Tube Worm",
     depth: 3225,
     description: "No mouth or stomach.",
-    imageUrl: "/images/GiantTubeWorm.png",
+    imageUrl: asset('GiantTubeWorm.png'),
     sizeCategory: "Large"
   },
   {
@@ -891,7 +892,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Scaly-foot Snail",
     depth: 3291,
     description: "Has an iron shell.",
-    imageUrl: "/images/Scaly-footSnail.png",
+    imageUrl: asset('Scaly-footSnail.png'),
     sizeCategory: "Large"
   },
   {
@@ -899,7 +900,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Cuvier's Beaked Whale",
     depth: 3357,
     description: "Deepest diving mammal known.",
-    imageUrl: "/images/Cuviersbeakedwhale.png",
+    imageUrl: asset('Cuviersbeakedwhale.png'),
     sizeCategory: "Large"
   },
   {
@@ -907,7 +908,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Headless Chicken Fish",
     depth: 3423,
     description: "Swimming deep-sea cucumber.",
-    imageUrl: "/images/HeadlessChickenFish.png",
+    imageUrl: asset('HeadlessChickenFish.png'),
     sizeCategory: "Custom"
   },
   {
@@ -915,7 +916,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Fangtooth",
     depth: 3469,
     description: "Toughest fish in abyss.",
-    imageUrl: "/images/fangtooth.png",
+    imageUrl: asset('fangtooth.png'),
     sizeCategory: "Large"
   },
   {
@@ -923,7 +924,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Zombie Worm",
     depth: 3555,
     description: "Dissolves bone with acid.",
-    imageUrl: "/images/ZombieWorm.png",
+    imageUrl: asset('ZombieWorm.png'),
     sizeCategory: "Large"
   },
   {
@@ -931,7 +932,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Gigantactis",
     depth: 3620,
     description: "Extremely long glowing lure.",
-    imageUrl: "/images/Gigantactis.png",
+    imageUrl: asset('Gigantactis.png'),
     sizeCategory: "Large"
   },
   {
@@ -939,7 +940,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Cookiecutter Shark",
     depth: 3686,
     description: "Takes round bites out-of-prey.",
-    imageUrl: "/images/cookiecuttershark.png",
+    imageUrl: asset('cookiecuttershark.png'),
     sizeCategory: "Large"
   },
   {
@@ -947,7 +948,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Pelican Eel",
     depth: 3762,
     description: "Swallows prey whole easily.",
-    imageUrl: "/images/PelicanEel.png",
+    imageUrl: asset('PelicanEel.png'),
     sizeCategory: "Large"
   },
   {
@@ -955,7 +956,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Sea Pen",
     depth: 3818,
     description: "Glows when it's touched.",
-    imageUrl: "/images/SeaPen.png",
+    imageUrl: asset('SeaPen.png'),
     sizeCategory: "Big"
   },
   {
@@ -963,7 +964,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Harp Sponge",
     depth: 3884,
     description: "Traps prey with Velcro-hooks.",
-    imageUrl: "/images/HarpSponge.png",
+    imageUrl: asset('HarpSponge.png'),
     sizeCategory: "Large"
   },
   {
@@ -971,7 +972,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Bubblegum Coral",
     depth: 3950,
     description: "Colonies grow very slowly.",
-    imageUrl: "/images/bubblegumcoral.png",
+    imageUrl: asset('bubblegumcoral.png'),
     sizeCategory: "Large"
   },
   {
@@ -979,7 +980,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Atolla Jellyfish",
     depth: 4200,
     description: "\"Burglar alarm\" light flashes.",
-    imageUrl: "/images/AtollaJellyfish.png",
+    imageUrl: asset('AtollaJellyfish.png'),
     sizeCategory: "Big"
   },
   {
@@ -987,7 +988,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Dumbo Octopus",
     depth: 4443,
     description: "Deepest living octopus species.",
-    imageUrl: "/images/DumboOctopus.png",
+    imageUrl: asset('DumboOctopus.png'),
     sizeCategory: "Large"
   },
   {
@@ -995,7 +996,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Faceless Fish",
     depth: 4686,
     description: "Head has no face.",
-    imageUrl: "/images/FacelessFish.png",
+    imageUrl: asset('FacelessFish.png'),
     sizeCategory: "Large"
   },
   {
@@ -1003,7 +1004,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Tripod Fish",
     depth: 4929,
     description: "Stands on three fins.",
-    imageUrl: "/images/TripodFish.png",
+    imageUrl: asset('TripodFish.png'),
     sizeCategory: "Custom"
   },
   {
@@ -1011,7 +1012,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Abyssal Grenadier",
     depth: 5171,
     description: "Smells food miles away.",
-    imageUrl: "/images/AbyssalGrenadier.png",
+    imageUrl: asset('AbyssalGrenadier.png'),
     sizeCategory: "Large"
   },
   {
@@ -1019,7 +1020,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Abyssal Spiderfish",
     depth: 5414,
     description: "Feels vibrations through fins.",
-    imageUrl: "/images/AbyssalSpiderfish.png",
+    imageUrl: asset('AbyssalSpiderfish.png'),
     sizeCategory: "Custom"
   },
   {
@@ -1027,7 +1028,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Sea Pig",
     depth: 5657,
     description: "Walks on water-filled tubes.",
-    imageUrl: "/images/SeaPig.png",
+    imageUrl: asset('SeaPig.png'),
     sizeCategory: "Large"
   },
   {
@@ -1035,7 +1036,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Deep-sea Anemone",
     depth: 5900,
     description: "Lives on trench walls.",
-    imageUrl: "/images/Deep-seaAnemone.png",
+    imageUrl: asset('Deep-seaAnemone.png'),
     sizeCategory: "Big"
   },
   {
@@ -1043,7 +1044,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Giant Amphipod",
     depth: 7010,
     description: "Giant shrimp-like scavenger.",
-    imageUrl: "/images/GiantAmphipod.png",
+    imageUrl: asset('GiantAmphipod.png'),
     sizeCategory: "Big"
   },
   {
@@ -1051,7 +1052,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Comb Jelly",
     depth: 6895,
     description: "Largest animal using cilia.",
-    imageUrl: "/images/CombJelly.png",
+    imageUrl: asset('CombJelly.png'),
     sizeCategory: "Big"
   },
   {
@@ -1059,7 +1060,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Notoliparis kermadecensis",
     depth: 7291,
     description: "Endures extreme trench pressure.",
-    imageUrl: "/images/Notolipariskermadecensis.png",
+    imageUrl: asset('Notolipariskermadecensis.png'),
     sizeCategory: "Large"
   },
   {
@@ -1067,7 +1068,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Pseudoliparis amblystomopsis",
     depth: 7686,
     description: "Found in Japan Trench.",
-    imageUrl: "/images/Pseudoliparisamblystomopsis.png",
+    imageUrl: asset('Pseudoliparisamblystomopsis.png'),
     sizeCategory: "Large"
   },
   {
@@ -1075,7 +1076,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Hadal Sea Cucumber",
     depth: 8082,
     description: "Dominates the trench floor.",
-    imageUrl: "/images/HadalSeaCucumber.png",
+    imageUrl: asset('HadalSeaCucumber.png'),
     sizeCategory: "Big"
   },
   {
@@ -1083,7 +1084,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Hadal Snailfish",
     depth: 8477,
     description: "Has partially transparent skin.",
-    imageUrl: "/images/HadalSnailfish1.png",
+    imageUrl: asset('HadalSnailfish1.png'),
     sizeCategory: "Big"
   },
   {
@@ -1091,7 +1092,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Pseudoliparis swirei",
     depth: 8873,
     description: "Named after HMS Challenger.",
-    imageUrl: "/images/Pseudoliparisswirei.png",
+    imageUrl: asset('Pseudoliparisswirei.png'),
     sizeCategory: "Large"
   },
   {
@@ -1099,7 +1100,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Deep Trench Snailfish",
     depth: 9268,
     description: "Lives in total darkness.",
-    imageUrl: "/images/DeepTrenchSnailfish.png",
+    imageUrl: asset('DeepTrenchSnailfish.png'),
     sizeCategory: "Large"
   },
   {
@@ -1107,7 +1108,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Cusk Eel",
     depth: 9664,
     description: "Deepest recorded fish ever.",
-    imageUrl: "/images/CuskEel.png",
+    imageUrl: asset('CuskEel.png'),
     sizeCategory: "Custom"
   },
   {
@@ -1115,7 +1116,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Archaea",
     depth: 10059,
     description: "Not bacteria but similar.",
-    imageUrl: "/images/Archaea.png",
+    imageUrl: asset('Archaea.png'),
     sizeCategory: "Large"
   },
   {
@@ -1123,7 +1124,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Foraminifera",
     depth: 10455,
     description: "Builds tiny ornate shells.",
-    imageUrl: "/images/Foraminifera.png",
+    imageUrl: asset('Foraminifera.png'),
     sizeCategory: "Big"
   },
   {
@@ -1131,7 +1132,7 @@ export const SEA_CREATURES: SeaCreature[] = [
     name: "Polychaete Worms",
     depth: 10850,
     description: "Survives where others cannot.",
-    imageUrl: "/images/PolychaeteWorms.png",
+    imageUrl: asset('PolychaeteWorms.png'),
     sizeCategory: "Large"
   }
 ];

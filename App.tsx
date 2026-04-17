@@ -11,7 +11,7 @@ const APP_MARGIN = 150;
 const App: React.FC = () => {
   const [currentDepth, setCurrentDepth] = useState(0);
   const [showScrollTop, setShowScrollTop] = useState(false);
-
+  const frameSrc = `${import.meta.env.BASE_URL}frame.png`;
   const scrollViewportRef = useRef<HTMLDivElement>(null);
   const rafRef = useRef<number>(0);
 
@@ -99,9 +99,9 @@ const App: React.FC = () => {
         className="fixed overflow-hidden z-10"
         style={{
           top: 104,
-          right: 116,
-          bottom: 52,
-          left: 125,
+          right: 122,
+          bottom: 35,
+          left: 112,
         }}
       >
         <div className="relative w-full h-full overflow-hidden text-white font-sans selection:bg-cyan-500 selection:text-white">
@@ -274,12 +274,12 @@ const App: React.FC = () => {
 
       {/* FRAME ON THE BLACK BORDER */}
       <img
-        src="/frame.png"
+        src={frameSrc}
         alt="Frame"
         className="fixed z-[100] pointer-events-none select-none"
         draggable={false}
         style={{
-          top: -20,
+          top:0,
           left: 0,
           width: 'calc(100vw + 40px)',
           height: 'calc(100vh + 40px)',

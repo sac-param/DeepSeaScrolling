@@ -13,7 +13,7 @@ body,
 /* Custom scrollbar handling for a cleaner look */
 body {
   overflow-x: hidden;
-  background-color: #ff0000;
+  background-color: #000;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
