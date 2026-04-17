@@ -12,6 +12,7 @@ const App: React.FC = () => {
   const [currentDepth, setCurrentDepth] = useState(0);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const frameSrc = `${import.meta.env.BASE_URL}frame.png`;
+  const logoSrc = `${import.meta.env.BASE_URL}logo.svg`;
   const scrollViewportRef = useRef<HTMLDivElement>(null);
   const rafRef = useRef<number>(0);
 
@@ -98,9 +99,9 @@ const App: React.FC = () => {
       <div
         className="fixed overflow-hidden z-10"
         style={{
-          top: 126,
-          right: 122,
-          bottom: 74,
+          top: 120,
+          right: 116,
+          bottom: 70,
           left: 112,
         }}
       >
@@ -185,10 +186,16 @@ const App: React.FC = () => {
                   className="absolute top-0 left-0 w-full flex flex-col justify-center items-center z-30"
                   style={{ height: `${INTRO_HEIGHT}px` }}
                 >
-                  <h1 className="text-5xl md:text-8xl font-black text-cyan-900 drop-shadow-sm tracking-wider mb-6 text-center">
-                    THE DEEP SEA
+                  <img
+                    src={logoSrc}
+                    alt="Logo"
+                    className="w-64 md:w-62 mb-6 object-contain"
+                    draggable={false}
+                  />
+                  <h1 className="text-5xl md:text-8xl font-black text-cyan-900 drop-shadow-sm tracking-wider mb-6 text-center customColor">
+                    OCEAN EXPEDITION
                   </h1>
-                  <p className="text-lg md:text-2xl text-cyan-700 max-w-lg mx-auto font-light leading-relaxed drop-shadow-sm text-center px-4">
+                  <p className="text-lg md:text-3xl text-cyan-700 max-w-xlg mx-auto font-light leading-relaxed drop-shadow-sm text-center px-4">
                     Scroll down to explore the ocean&apos;s depths
                   </p>
                   <div className="mt-12 animate-bounce text-cyan-600">

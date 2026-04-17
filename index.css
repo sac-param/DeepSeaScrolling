@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "BD Geminis";
+  src: url("/BD-Geminis.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Global page reset */
 html,
 body,
@@ -13,9 +21,13 @@ body,
 /* Custom scrollbar handling for a cleaner look */
 body {
   overflow-x: hidden;
-  background-color: #c00000;
+  background-color: #000;
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+.customColor {
+  font-family: "BD Geminis", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -53,6 +65,7 @@ img {
   from {
     width: 100%;
   }
+
   to {
     width: 0%;
   }
@@ -63,6 +76,7 @@ img {
     opacity: 0;
     transform: translateY(6px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -73,6 +87,7 @@ img {
   0% {
     background-position: 0% 50%;
   }
+
   100% {
     background-position: 100% 50%;
   }
@@ -82,6 +97,7 @@ img {
   0% {
     background-position: 0% 0%;
   }
+
   100% {
     background-position: 100% 100%;
   }
@@ -91,6 +107,7 @@ img {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -110,15 +127,19 @@ img {
   0% {
     transform: translateY(0) translateX(0);
   }
+
   25% {
     transform: translateY(-25vh) translateX(10px);
   }
+
   50% {
     transform: translateY(-50vh) translateX(-10px);
   }
+
   75% {
     transform: translateY(-75vh) translateX(10px);
   }
+
   100% {
     transform: translateY(-120vh) translateX(0);
   }
