@@ -98,9 +98,9 @@ const App: React.FC = () => {
       <div
         className="fixed overflow-hidden z-10"
         style={{
-          top: 104,
+          top: 126,
           right: 122,
-          bottom: 35,
+          bottom: 74,
           left: 112,
         }}
       >
@@ -279,11 +279,8 @@ const App: React.FC = () => {
         className="fixed z-[100] pointer-events-none select-none"
         draggable={false}
         style={{
-          top:0,
-          left: 0,
-          width: 'calc(100vw + 40px)',
-          height: 'calc(100vh + 40px)',
-          objectFit: 'fill',
+          width: '100vw',
+          height: '100vh',
         }}
       />
     </div>
